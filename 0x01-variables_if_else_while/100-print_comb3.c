@@ -6,21 +6,17 @@
  */
 int main(void)
 {
-int i = '0';
-int j = '0';
-while (i <= '9')
+int i = 0, j;
+while (i <= 9)
 {
-while (j <= '9')
+j = 0;
+while (j <= 9)
 {
-if (!(i > j) || !(i == j))
+if (i != j && i < j)
 {
-putchar(i);
-putchar(j);
-if (i == '8' &&  j == '9')
-{
-putchar('\n');
-}
-else
+putchar(i + 48);
+putchar(j + 48);
+if (i + j != 17)
 {
 putchar(',');
 putchar(' ');
@@ -28,8 +24,8 @@ putchar(' ');
 }
 j++;
 }
-j = '0';
 i++;
-};wq
+}
+putchar('\n');
 return (0);
 }
