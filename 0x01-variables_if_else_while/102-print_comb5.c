@@ -12,13 +12,13 @@ while (i <= 99)
 i = j;
 while (j <= 99)
 {
-if (j != i)
+if (i < j && i != j)
 {
-putchar((i / 10) + 48);
-putchar((i % 10) + 48);
+putchar((i / 10) + '0');
+putchar((i % 10) + '0');
 putchar(' ');
-putchar((j / 10) + 48);
-putchar((j % 10) + 48);
+putchar((j / 10) + '0');
+putchar((j % 10) + '0');
 if (i != 98 || j != 99)
 {
 putchar(',');
