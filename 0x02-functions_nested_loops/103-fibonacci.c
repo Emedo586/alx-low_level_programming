@@ -13,7 +13,7 @@ float total_sum;
 while (1)
 {
 sum = fib1 + fib2;
-if (sum > 400000)
+if (sum > 4000000)
 break;
 if ((sum % 2) == 0)
 total_sum += sum;
