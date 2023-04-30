@@ -1,22 +1,22 @@
 #include "main.h"
 /**
   * print_diagonal - prints a diagonal line
-  * @n: is the number of times the \ character should be printed
-  * Return: always 0
+  * @n: input variables
+  *
+  * Return: void
   */
 void print_diagonal(int n)
 {
-int postn, space;
+int i, j;
 if (n <= 0)
 _putchar('\n');
-else
+for (i = 0; i < n; i++)
 {
-for (postn = 0; postn < n; postn++)
+for (j = 0; j < i; j++)
 {
-for (space = 0; space < postn; space++)
 _putchar(' ');
-_putchar(92); /* is equal to '/' char*/
-_putchar('\n');
 }
+_putchar('\\');
+_putchar('\n');
 }
 }
