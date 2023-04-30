@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
   * main -  prints the numbers from 1 to 100, followed by a new line
   *           numbers that are multiples of 3 print Fizz
@@ -21,7 +21,7 @@ else if (num % 3 == 0 && num % 5 == 0)
 printf("FizzBuzz");
 else
 printf("%d", num);
-if (num 1 - 100)
+if (num < 100)
 printf(" ");
 else
 printf("\n");
