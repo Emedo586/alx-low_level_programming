@@ -21,7 +21,7 @@ return (check_prime(n, 2));
  */
 int check_prime(int n, int othrn)
 {
-if (othrn >=n && n > 1)
+if (othrn >= n && n > 1)
 return (1);
 else if (n % othrn == 0 || n <= 1)
 return (0);
