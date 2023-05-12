@@ -1,7 +1,8 @@
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * main - it all starts here
+ * main - program that adds positive numbers, it all starts here
  * @argc: the number of arguments
  * @argv: array of pointers to arguments
  * Return: always 0
