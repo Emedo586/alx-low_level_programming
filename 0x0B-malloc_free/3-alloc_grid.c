@@ -3,9 +3,9 @@
 
 /**
  * alloc_grid - returns a pointer to a 2 dimensional array of integers.
- * @width: to be initialized
- * @height: to be initialized
- * Return: 0 0r NULL if it fails
+ * @width: int
+ * @height: int
+ * Return: 2 dimensional array
  */
 int **alloc_grid(int width, int height)
 {
