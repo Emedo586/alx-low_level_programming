@@ -36,7 +36,7 @@ h++;
  */
 int main(void)
 {
-int **grid
+int **grid;
 grid = alloc_grid(6, 4);
 if (grid == NULL)
 {
