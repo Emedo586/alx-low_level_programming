@@ -9,27 +9,35 @@
  */
 int **alloc_grid(int width, int height)
 {
-int **tab, i, j;
-tab = malloc(sizeof(*tab) * height);
-if (width <= 0 || height <= 0 || tab == 0)
+int i, j, k, l;
+int **a;
+if (width <= 0 || height <= 0)
+return (NULL);
+a = malloc(sizeof(int *) * height);
+if (a == NULL)
 {
+free(a);
 return (NULL);
 }
-else
-{
 for (i = 0; i < height; i++)
 {
-tab[i] = malloc(sizeof(**tab) * width);
-if (tab[i] == 0)
+a[i] = malloc(sizeof(int) * width);
+if (a[i] == NULL)
 {
-/* free everything if malloc fails*/
-while (i--)
-free(tab);
+for (j = i; j >= 0; j--)
+{
+free(a[j]);
+}
+free(a);
 return (NULL);
 }
-for (j = 0; j < width; j++)
-tab[i][j] = 0;
+}
+for (k = 0; k < height; k++)
+{
+for (l = 0; l < width; l++)
+{
+a[k][l] = 0;
 }
 }
-return (tab);
+return (a);
 }
