@@ -47,6 +47,7 @@ while (str[i])
 if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
 {
 for (j = 1; str[i + j] != ' ' && str[i + 1]; j++)
+;
 j++;
 w[wc] = (char *)malloc(j *sizeof(char));
 j--;
@@ -59,7 +60,6 @@ free(w);
 return (NULL);
 }
 for (l = 0; l < j; l++)
-w[wc][l] = str[i + l];
 w[wc][l] = str[i + l];
 w[wc][l] = '\0';
 wc++;
