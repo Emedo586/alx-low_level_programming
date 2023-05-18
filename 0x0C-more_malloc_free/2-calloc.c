@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * memset - fills memory witj constant byte
+ * _memset - fills memory witj constant byte
  * @s: pointer to put the constant
  * @b: constant
  * @n:max bytes to use
