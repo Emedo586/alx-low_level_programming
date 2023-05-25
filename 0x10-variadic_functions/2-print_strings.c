@@ -4,7 +4,7 @@
  * print_strings - function that prints springs
  * @separator: separator between strings
  * @n: number of arguments
- * Return: 0
+ * Return: If one of the string is NULL, print (nil)
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
