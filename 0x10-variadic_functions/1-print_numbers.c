@@ -2,7 +2,7 @@
 
 /**
  * print_numbers - function that prints numbers.
- * @sepirator: string to be printed between numbers
+ * @separator: string to be printed between numbers
  * @n: number of arguments
  * Return: 0
  */
