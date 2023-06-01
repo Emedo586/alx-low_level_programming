@@ -8,4 +8,4 @@ main:
 
 
 section         .data
-        msg db 'Hello, Holberton\n', 0xa, 0
+        msg db 'Hello, Holberton', 0xa, 0
