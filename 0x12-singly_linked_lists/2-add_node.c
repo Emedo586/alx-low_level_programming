@@ -19,7 +19,7 @@ current_head->str = strdup(str);
 if (!current_head->str)
 {
 free(current_head);
-return(NULL);
+return (NULL);
 }
 current_head->len = strlen(current_head->str);
 }
