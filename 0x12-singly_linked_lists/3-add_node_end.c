@@ -20,7 +20,7 @@ if (!current_node->str)
 free(current_node);
 return (NULL);
 }
-current_node->len = _strlen(current_node->str);
+current_node->len = strlen(current_node->str);
 }
 if (node)
 {
