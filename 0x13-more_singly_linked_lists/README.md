@@ -1,6 +1,6 @@
 0x13. C - More singly linked list
 
-PROJECT EXCEPTATION
+PROJECT EXCEPTATIONS
 1. Write a function that prints all the elements of a listint_t list.
 2. Write a function that returns the number of elements in a linked listint_t list.
 3. Write a function that adds a new node at the beginning of a listint_t list.
@@ -12,6 +12,5 @@ PROJECT EXCEPTATION
 9. Write a function that returns the sum of all the data (n) of a listint_t linked list.
 10. Write a function that inserts a new node at a given position.
 11. Write a function that deletes the node at index index of a listint_t linked list.
-12. 
-13.
-14.
+12. Write a function that prints a listint_t linked list. 
+13. Write a function that finds the loop in a linked list.
