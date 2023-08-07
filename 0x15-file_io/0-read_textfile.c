@@ -25,12 +25,7 @@ if (fd == -1)
 return (0);
 }
 /* For buffer */
-/*buffer = malloc(letters * sizeof(char));
-if (buffer == NULL) 
-{
-return (0);
-}
-*/
+/*buffer = malloc(letters * sizeof(char))*/
 /*To read & write file*/
 bytes = read(fd, &buf[0], letters);
 bytes = write(STDOUT_FILENO, &buf[0], bytes);

@@ -17,11 +17,10 @@ j++;
 return (j);
 }
 
-/*
+/**
 * append_text_to_file - To appends text at the end of a file.
 * @filename: filename to append.
 * @text_content: content of the file to write.
-
 * Return: 1 if file exists, -1 if it doesn't.
 */
 int append_text_to_file(const char *filename, char *text_content)
