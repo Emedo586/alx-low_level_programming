@@ -11,39 +11,26 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 int fd;
-char buffer[];
-ssize_t _read, _write;
+char buf[8 * READ_BUF_SIZE];
+ssize_t bytes;
 
-if (filename == NULL)
+if (!filename || !letters)
 {
-return (0); 
+return (0);
 }
-//To open file
+/*To open file*/
 fd = open(filename, O_RDONLY);
 if (fd == -1)
-{ 
-return (0);
-}
-// For Buffer
-buffer = malloc(letters * sizeof(char));
-if (buffer == 0)
-return (0);
-// To read file
-_read = read(fd, buffer, letters);
-if (_read == -1)
 {
-free(buffer);
-close(fd);
 return (0);
 }
-// To write file
-_write = write(STDOUT_FILENO, buffer, _read);
-if (_write == -1)
-{
-free(buffer);
+/* For buffer */
+/* buffer = malloc(letters * sizeof(char))
+ * if (buffer == NULL)
+ * return (0);*/
+/*To read & write file*/
+bytes = read(fd, &buf[0], letters);
+bytes = write(fd, &buf[0], bytes);
 close(fd);
-return (0);
-}
-close(fd);
-return (_read);
+return (bytes);
 }
