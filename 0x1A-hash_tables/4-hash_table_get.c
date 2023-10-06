@@ -10,21 +10,21 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-    unsigned long int index;
-    hash_node_t *bucket;
+unsigned long int index;
+hash_node_t *bucket;
 
-    if (ht == NULL || key == NULL || strlen(key) == 0)
-        return (NULL);
+if (ht == NULL || key == NULL || strlen(key) == 0)
+return (NULL);
 
-    index = key_index((const unsigned char *)key, ht->size);
-    bucket = ht->array[index];
+index = key_index((const unsigned char *)key, ht->size);
+bucket = ht->array[index];
 
-    while (bucket != NULL)
-    {
-        if (strcmp(bucket->key, key) == 0)
-            return (bucket->value);
-        bucket = bucket->next;
-    }
+while (bucket != NULL)
+{
+if (strcmp(bucket->key, key) == 0)
+return (bucket->value);
+bucket = bucket->next;
+}
 
-    return (NULL);
+return (NULL);
 }
