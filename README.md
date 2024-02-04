@@ -11,6 +11,3 @@ This repository contains various projects that use the C programming language. C
 
 ![Miroslav Jandric - Software Developer](https://github.com/Emedo586/alx-low_level_programming/assets/129039388/445999be-af8e-48db-a39c-2b90ce7d477c)
 
-![img](https://pin.it/58lX4Gxf5)
-
-<img align="center" alt="Coding" width="400" src="https://pin.it/58lX4Gxf5">
